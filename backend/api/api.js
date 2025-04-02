@@ -3,8 +3,10 @@ import authRouter from "./routes/auth.routes.js";
 import cartRouter from "./routes/cart.routes.js";
 import orderRouter from "./routes/order.routes.js";
 import productRouter from "./routes/product.routes.js";
+import "./database.js"
 
 const api = express();
+api.use(express.json());
 
 api.get('/', (req, res) => {
     res.json({

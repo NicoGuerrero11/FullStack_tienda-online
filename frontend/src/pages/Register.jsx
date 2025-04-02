@@ -44,7 +44,7 @@ function Register() {
       <h1>Register</h1>
       <form>
         <div>
-          <label htmlFor="firstName">Name</label>
+          <label htmlFor="firstName">First name</label>
           <input 
             type="text" 
             id='firstName'
@@ -55,7 +55,7 @@ function Register() {
           />
         </div>
         <div>
-          <label htmlFor="lastName">Name</label>
+          <label htmlFor="lastName">Last name</label>
           <input 
             type="text" 
             id='lastName' 
@@ -77,14 +77,14 @@ function Register() {
           />
         </div>
         <div>
-          <label htmlFor="password"> Password</label>
+          <label htmlFor="password">Password</label>
           <input 
             type="password"  
             id="password" 
-            name='password' 
-            value={formData.password}
+            name="password" 
             onChange={handleChange}
-            placeholder='Enter password'
+            value={formData.password}
+            placeholder="Enter password"
           />
         </div>
         <button onClick={handleSubmit} type='submit'>Register </button>
